@@ -1,0 +1,237 @@
+body {
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	position: absolute;
+	max-width: 100%;
+	height: auto;
+	left: 80%;
+	top: 0%;
+}
+
+.descContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.descItems {
+	display: flex;
+	width: 483px;
+	flex-direction: row;
+}
+
+.vidContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.vid {
+	width: 336px;
+	height: 220px;
+	font-size: small;
+	margin: 10px;
+}
+
+.body {
+	width: 966px;
+}
+
+.pageWidth {
+	width: 966px;
+}
+
+.halfWidth {
+	width: 50%;
+}
+
+.vidSpan {
+	width: 280px;
+	height: 220px
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.fa-star {
+	cursor: pointer;
+	color: #dabd18b2;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #e9e9e9;
+  }
+  
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+.topnav a.active {
+	background-color: #2196F3;
+	color: white;
+  }
+  
+.topnav .search-container {
+	float: right;
+  }
+  
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+  }
+  
+.topnav .search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+  }
+  
+.topnav .search-container button:hover {
+	background: #ccc;
+  }
+  
+#filter-button {
+	position: absolute;
+	display: inline-flex;
+	right: 5%;
+	top: 11%;
+	width: 5%;
+}
+
+#filter {
+	position: absolute;
+	display: none;
+	border: 1px solid black;
+	width: 33%;
+	right: 0;
+	height: 100%;
+	top: 6%;
+	animation-name: cloud-animation;
+	animation-fill-mode: forwards;
+	animation-duration: 3.4s;
+}
+
+#vehicleSearchForm {
+	font-size: 20px;
+}
+
+select {
+	height: 30px;
+	font-size: large;   
+   }
+
+.right {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.default {
+	height: 20px;
+}
+
+
+/* Mobile Breakpoint */
+@media screen and (max-width: 1500px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.topnav .search-container {
+	  float: none;
+	}
+	.topnav a, .topnav input[type=text], .topnav .search-container button {
+	  float: none;
+	  display: inline;
+	  text-align: left;
+	  width: 100%;
+	  margin: 0;
+	  padding: 14px;
+	}
+	.topnav input[type=text] {
+	  border: 1px solid #ccc;  
+	}
+	#filterbtn {
+		position: absolute;
+		display: inline-flex;
+		right: 5%;
+		top: 11%;
+		width: 5%;
+	}
+	.logo {
+		position: absolute;
+		max-width: 100%;
+		height: auto;
+		left: 80%;
+		top: 0%;
+	}
+	#filter {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		left: 0;
+		/* background-color: black; */
+	}
+
+	#vehicleSearchForm {
+		font-size: 40px;
+		
+	}
+
+	select {
+		height: 45px;
+		font-size: large;   
+	   }
+
+	.right {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.default {
+		height: 200px;
+	}
+	
+
+	@keyframes cloud-animation {
+		from {
+		  transform: translateX(40vw);
+		}
+		to {
+		  transform: translateX(0);
+		}
+	  }
+
+  }
+
+  /* keyframes */
+@keyframes cloud-animation {
+	from {
+	  transform: translateX(40vw);
+	}
+	to {
+	  transform: translateX(0);
+	}
+  }
